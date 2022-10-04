@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(241, 232, 220);
+    padding: 10px 150px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 999;
+}
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: rgb(108, 108, 229); 
+}
+.nav{
+    display: block;
+    margin-right: -35px;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(153, 153, 235);
+    padding-left: 30px;
+    font-weight:500;
+    transition: 0.8s;
+
+}
+.nav a:hover{
+    color: #601cfc;
+    
+}
+section{
+    padding: 100px 100px ;
+}
+.main{
+    padding-left: 200px;
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    background: url(/imgs/Screenshot\ 2022-09-03\ 124642.png);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+}
+
+.main h2 span{
+    font-size: 3em;
+    font-weight: 600;
+    color: rgb(241, 232, 220);
+    display: inline-block;
+    margin-top: 10px;
+}
+.main-btn{
+    /* border: 3px  rgb(108, 108, 229) solid; */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: .8em;
+    font-weight: 600;
+    display: inline-block;
+    background-color: rgb(215, 205, 191);
+    padding: 1.2em 5.1875em;
+    margin-top: 250px;
+    margin-left: 320px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    transition: 1s ease;
+}
+.main-btn:hover{
+    transform: scale(1.1);
+    background-color:rgb(123, 123, 225); 
+}
+.title {
+    font-size: 2.4em;
+    font-weight: 600;
+    color: rgb(108, 108, 139);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.about div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+.language{
+    background-color: rgb(255, 246, 235);
+}
+.language div h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.language div li{
+    margin-left: 30px;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+}
+/* /////////////////////////// */
+footer{
+    position: relative;
+    width: 100%;
+    background: #202425; 
+    padding: 20px 50xp;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+ }
+ footer .icon-footer,
+ footer .time-line{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 40px 0 0;
+ }
+ footer .icon-footer li,
+ footer .time-line li{
+     list-style: none;
+ }
+ .icon-footer li a{
+     font-size: 1.8em;
+     color: rgb(219, 213, 207);
+     margin: 0 10px;
+     display: inline-block;
+     transition: 0.7s ;
+ }
+ .icon-footer li a:hover{
+     transform: translateY(-15px)
+ }
+ .time-line li a{
+     font-size: 1.3em;
+     color: #fff;
+     margin: 0 10px;
+     text-decoration: none;
+     display: inline-block;
+     transition: 0.8s ease;
+ }
+ .time-line li a:hover{
+     color: #6f6f71;
+ }
+ footer p{
+     color: #fff;
+     font-size: 14px;
+     margin-top: 16px;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+
+
+/* ////////////////////////////////////////// */
+@media (max-width:1024px) {
+    header{
+        padding: 12px 20px;
+    }
+    .nav a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.6em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+        font-size: 1.5em;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main h2{
+        font-size: 0.8em;
+    }
+    .main h3{
+        font-size: 1.4em;
+    }
+
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
